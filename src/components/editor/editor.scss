@@ -1,0 +1,36 @@
+.card{
+    background-image: url("../../assets/editor.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+    background-size: cover;
+    width: 500px;
+    padding-bottom: 0;
+
+    &-content{
+        outline: 0;
+        border: 0;
+        background: transparent;
+        width: 100%;
+        min-height: 300px;
+        color: #fff;
+
+        &::-webkit-scrollbar {
+            width: 5px
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: inherit
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,.05);
+            border-radius: 99px
+        }
+        
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,.1)
+        }
+    }
+}
