@@ -17,5 +17,5 @@
   };
   </script>
   
-  <style src="./editor.scss" lang="sass"></style>
+  <style src="./card.scss" lang="sass"></style>
   

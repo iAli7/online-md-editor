@@ -1,6 +1,8 @@
 <template>
-  <editor :editorText="editorText" @updateText="updateEditorText" />
-  <result :editorText="editorText" />
+  <div class="app-content">
+    <editor :editorText="editorText" @updateText="updateEditorText" />
+    <result :editorText="editorText" />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -14,3 +16,5 @@ const updateEditorText = (text: string) => {
   editorText.value = text;
 };
 </script>
+
+<style src="./app.scss" lang="sass"></style>

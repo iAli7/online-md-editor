@@ -1,8 +1,6 @@
 <template>
     <div class="card">
-      <div class="card-content">
-        {{ editorText }}
-      </div>
+      <textarea readonly class="card-content" style="white-space: pre-line;" :value="editorText"></textarea>
     </div>
   </template>
   
