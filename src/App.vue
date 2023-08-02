@@ -10,7 +10,11 @@ import { ref } from 'vue';
 import editor from './components/editor/editor.vue';
 import result from './components/result/result.vue';
 
-const editorText = ref('');
+const editorText = ref(`# Hello!
+
+welcome online markdown editor
+`
+);
 
 const updateEditorText = (text: string) => {
   editorText.value = text;

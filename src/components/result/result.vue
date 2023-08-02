@@ -1,12 +1,14 @@
 <template>
-    <div class="card">
-      <textarea readonly class="card-content" style="white-space: pre-line;" :value="editorText"></textarea>
-    </div>
-  </template>
+  <div class="card">
+    <div class="card-content" v-html="parsedMarkdown"></div>
+  </div>
+</template>
   
-  <script setup lang="ts">
-  import { defineProps } from 'vue';
-  
-  const { editorText } = defineProps(['editorText']);
-  </script>
-  
+<script setup lang="ts">
+import { computed } from 'vue';
+import { marked } from 'marked';
+
+const props = defineProps(['editorText']);
+
+const parsedMarkdown = computed(() => marked(props.editorText));
+</script>
